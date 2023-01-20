@@ -1,0 +1,455 @@
+[
+  {
+    "descripcion": "Juego de 4 Sillas Negras Jardín",
+    "especificaciones": ["4 Sillas Negras Jardín", "Medidas: 75cm de alto"],
+    "precio": 26000,
+    "fotos": "sillasjardin",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Rack para TV",
+    "especificaciones": [
+      "Medidas: 44 cm de ancho x 78 cm de alto",
+      "Con cajonera y puertas de vidrio"
+    ],
+    "precio": 7000,
+    "fotos": "racktv",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Minicomponente AIWA",
+    "especificaciones": [
+      "Modelo: NSX-S333",
+      "Medidas: 33 cm de alto x 23,5 cm de ancho",
+      "Potencia: 30 W",
+      "Bandeja para 3 CDs funcionando",
+      "Radio AM-FM",
+      "Control Remoto original",
+      "Doble cassettera",
+      "Parlantes originales",
+      "",
+      "Defectos: ",
+      "- La lectora de CD se abre la primera vez que la cerrás",
+      "- La rosca del volumen a veces hace falso contacto",
+      "Todo es reparable. El audio funciona excelente. ",
+      "Incluye un cable miniplug para conectar tu celular!"
+    ],
+    "precio": 25000,
+    "fotos": "aiwa",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Sillón dos cuerpos",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 90 cm de ancho x 65 cm de alto x 1,60 cm de largo",
+      "Viene con 3 almohadas de regalo"
+    ],
+    "precio": 0,
+    "fotos": "sillondoscuerpos",
+    "estado": "Reservado"
+  },
+  {
+    "descripcion": "Sillón un cuerpo",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 72 cm de alto x 65 de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "sillonuncuerpos",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Puff",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Mesa ratona",
+    "especificaciones": [
+      "Material: Madera laqueada negra con vidrio",
+      "Color: Negro",
+      "Medidas: Dos cuerpos juntos de 70 cm largo x 45 cm ancho",
+      "Total: 45 de ancho x 40 cm de alto x 95 cm de largo"
+    ],
+    "precio": 0,
+    "fotos": "mesaratona",
+    "estado": "Reservado"
+  },
+  {
+    "descripcion": "Mesa de velador",
+    "especificaciones": [
+      "Material: Melamina",
+      "Medidas: 52 cm ancho x 52 cm profundidad x 65 cm alto",
+      "Viene con un mantel de regalo",
+      "Defecto: Hay que limar las patas para reparar el desgaste"
+    ],
+    "precio": 5000,
+    "fotos": "mesavelador",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Mesa comedor",
+    "especificaciones": [
+      "Mesa de Madera Maciza Extensible Thonet",
+      "Medidas:",
+      "75 cm de alto x 1,80 m de largo x 1 m de ancho",
+      "Se extiende a 2,35 m de largo"
+    ],
+    "precio": 90000,
+    "fotos": "mesacomedor",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Sillas comedor",
+    "especificaciones": [
+      "2 Sillas de Madera Paraiso y Cuero Ecológico",
+      "Color: Paraiso natural",
+      "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad"
+    ],
+    "precio": 18000,
+    "fotos": "sillascomedor",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Sillas comedor",
+    "especificaciones": [
+      "4 Sillas de Madera Paraiso y Cuero Ecológico",
+      "Color: Paraiso natural",
+      "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad"
+    ],
+    "precio": 0,
+    "fotos": "sillascomedor",
+    "estado": "Reservado"
+  },
+  {
+    "descripcion": "Aparador/Modular para living",
+    "especificaciones": [
+      "2 Sillas de Madera Paraiso y Cuero Ecológico",
+      "Color: Paraiso natural",
+      "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad"
+    ],
+    "precio": 70000,
+    "fotos": "modularliving",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Alacenas",
+    "especificaciones": [
+      "Alacena 1:",
+      " Medidas: 60cm alto x 79,5 ancho",
+      "Alacena 2:",
+      " Medidas: 100 cm ancho x 60 cm alto x 33 cm profundidad",
+      "                 (ancho: 77 cm placard + 23 cm estante)",
+      "Alacena 3:",
+      " Medidas: "
+    ],
+    "precio": 25000,
+    "fotos": "alacenas",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Freezer Vertical Whirlpool",
+    "especificaciones": [
+      "Marca: Whirlpool",
+      "Incluye 4 estantes",
+      "Medidas: 86 cm de alto x 52 de largo x 49 de ancho"
+    ],
+    "precio": 95000,
+    "fotos": "freezervertical",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Heladera con Freezer General Electric",
+    "especificaciones": [
+      "Heladera con Freezer No Frost Plateada",
+      "Incluye dispenser de agua y luz digital",
+      "Marca: General Electric",
+      "Medida: 1,90 m de alto x 68 cm x 80 cm de profundidad"
+    ],
+    "precio": 0,
+    "fotos": "heladera",
+    "estado": "Reservado"
+  },
+  {
+    "descripcion": "Microondas Frigidaire",
+    "especificaciones": [
+      "Marca: Frigidaire"
+    ],
+    "precio": 19900,
+    "fotos": "microondas",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Horno Eléctrico",
+    "especificaciones": [
+      "Horno Eléctrico con estante",
+      "Incluye bandeja de regalo",
+      "Marca: ATM"
+    ],
+    "precio": 0,
+    "fotos": "hornoelectrico",
+    "estado": "Reservado"
+  },
+  {
+    "descripcion": "Alacena vertical de pie",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Despensero/alacena de pie",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Mesa rebatible de pared",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Sillas de hierro con cuero ecológico",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Colchón + Sommier 2 plazas con resortes",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Respaldo de cama",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Mesa de luz",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Cómoda",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Zapatillero",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Rack para TV 2",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Armario",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Cama 1 plaza",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Colchón 1 plaza espuma alta densidad",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Colchón 1 plaza",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Escritorio Esquinero con Cajonera",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Biblioteca con armario",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Dormitorio juvenil",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Estufa Orbis 416",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Calefactor Kacemaster",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "PC de escritorio",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Impresora HP Deskjet F4180",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Guitarra",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  },
+  {
+    "descripcion": "Lector de cintas",
+    "especificaciones": [
+      "Material: Cuero ecológico",
+      "Ideal para retapizar",
+      "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho"
+    ],
+    "precio": 7000,
+    "fotos": "puff",
+    "estado": "En venta"
+  }
+]

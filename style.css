@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(164, 157, 232);
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 70px;
+}
+.card{
+    margin: 8px;
+    
+}
+
+.flotante {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.flotante__contico{
+    display: inline-flex;
+    justify-content: center;
+     align-items: center;
+     width: 80px;
+     height: 80px;
+    border-radius: 50%;
+
+}
+.flotante__contico:hover{
+    transform: scale(1.3);
+}
+.whatsapp {
+    background-color: green;
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+}
+.fin{
+
+    background-color: rgb(173, 220, 204);
+}
