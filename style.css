@@ -1,5 +1,9 @@
 body {
-  background-color: rgb(164, 157, 232);
+  background-color: rgb(220, 209, 178);
+  color: #311700;
+}
+.navbar .navbar-brand {
+  color: #311700;
 }
 .cards {
   display: flex;
@@ -7,11 +11,17 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 .card {
   margin: 8px;
   width: 18rem;
+  background-color: #fcfffe;
+}
+.card-text {
+  max-height: 100px;
+  display: flex;
+  overflow-y: auto;
 }
 
 .flotante {
@@ -33,10 +43,12 @@ body {
 }
 .whatsapp {
   background-color: green;
-  color: white;
   font-size: 50px;
-  margin: 20px;
+  margin: 0px 20px 35px 0px;
 }
-.fin {
-  background-color: rgb(173, 220, 204);
+.splide__slide img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }

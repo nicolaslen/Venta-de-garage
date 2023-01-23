@@ -16,20 +16,50 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide");
+        splide.mount();
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="navbar bg-light fixed-top">
+    <nav class="navbar" style="background-color: #fcfffe">
       <div class="container-fluid">
-        <h1>Venta de Garage</h1>
+        <h2 style="width: 100%; text-align: center">Venta de Garage</h2>
       </div>
       <div class="container-fluid">
         <a class="navbar-brand" href="https://wa.me/5491157105974"
-          >Liliana - 1157105974
+          ><img src="./img/whatsapp.png" alt="" style="width: 25px" /> Liliana -
+          1157105974
         </a>
+      </div>
+      <div class="container-fluid">
         <a class="navbar-brand" href="https://wa.me/5491139216721"
-          >Leila - 1139216721
+          ><img src="./img/whatsapp.png" alt="" style="width: 25px" /> Leila -
+          1139216721
         </a>
+      </div>
+      <div class="container-fluid">
+        No incluye envío. Se retira por Villa Crespo.
+      </div>
+      <div class="container-fluid">Su consulta no molesta. Gracias!</div>
+      <div
+        class="container-fluid justify-content-center"
+        style="font-size: smaller"
+      >
+        Puede hacer clic en las imágenes para agrandarlas!
       </div>
     </nav>
 
@@ -37,15 +67,9 @@
 
     <div class="flotante">
       <a href="https://wa.me/5491157104935" class="flotante__contico whatsapp">
-        <img src="./img/whatsapp.png" alt="" style="width: 45px" ; />
+        <img src="./img/whatsapp.png" alt="" style="width: 45px" />
       </a>
     </div>
-    <footer>
-      <h1 class="fin">
-        Se retira en Villa Crespo. No se hacen envios. Su consulta no molesta.
-        Gracias!
-      </h1>
-    </footer>
 
     <script>
       const productos = [
@@ -53,8 +77,7 @@
           descripcion: "Juego de 4 Sillas Negras Jardín",
           especificaciones: ["4 Sillas Negras Jardín", "Medidas: 75cm de alto"],
           precio: 26000,
-          fotos: "sillas_jardin",
-          fotoscant: 2,
+          fotos: ["sillas_jardin/JPEG/1.jpg", "sillas_jardin/JPEG/2.jpg"],
           estado: "En venta",
         },
         {
@@ -64,7 +87,7 @@
             "Con cajonera y puertas de vidrio",
           ],
           precio: 7000,
-          fotos: "racktv",
+          fotos: ["rack_tv/JPEG/1.jpg", "rack_tv/JPEG/2.jpg"],
           estado: "En venta",
         },
         {
@@ -86,7 +109,12 @@
             "Incluye un cable miniplug para conectar tu celular!",
           ],
           precio: 25000,
-          fotos: "aiwa",
+          fotos: [
+            "minicomponente_aiwa/JPEG/1.jpg",
+            "minicomponente_aiwa/JPEG/2.jpg",
+            "minicomponente_aiwa/JPEG/3.jpg",
+            "minicomponente_aiwa/JPEG/4.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -98,7 +126,11 @@
             "Viene con 3 almohadas de regalo",
           ],
           precio: 0,
-          fotos: "sillondoscuerpos",
+          fotos: [
+            "sillon_dos_cuerpos/JPEG/1.jpg",
+            "sillon_dos_cuerpos/JPEG/2.jpg",
+            "sillon_dos_cuerpos/JPEG/3.jpg",
+          ],
           estado: "Reservado",
         },
         {
@@ -109,7 +141,11 @@
             "Medidas: 72 cm de alto x 65 de ancho",
           ],
           precio: 7000,
-          fotos: "sillonuncuerpos",
+          fotos: [
+            "sillon_un_cuerpo/JPEG/1.jpg",
+            "sillon_un_cuerpo/JPEG/2.jpg",
+            "sillon_un_cuerpo/JPEG/3.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -120,7 +156,7 @@
             "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho",
           ],
           precio: 7000,
-          fotos: "puff",
+          fotos: ["puff/JPEG/1.jpg", "puff/JPEG/2.jpg"],
           estado: "En venta",
         },
         {
@@ -132,7 +168,7 @@
             "Total: 45 de ancho x 40 cm de alto x 95 cm de largo",
           ],
           precio: 0,
-          fotos: "mesaratona",
+          fotos: ["mesa_ratona/JPEG/1.jpg", "mesa_ratona/JPEG/2.jpg"],
           estado: "Reservado",
         },
         {
@@ -144,7 +180,7 @@
             "Defecto: Hay que limar las patas para reparar el desgaste",
           ],
           precio: 5000,
-          fotos: "mesavelador",
+          fotos: ["mesa_de velador/JPEG/1.jpg", "mesa_de velador/JPEG/2.jpg"],
           estado: "En venta",
         },
         {
@@ -156,7 +192,13 @@
             "Se extiende a 2,35 m de largo",
           ],
           precio: 90000,
-          fotos: "mesacomedor",
+          fotos: [
+            "mesa_comedor/JPEG/1.jpg",
+            "mesa_comedor/JPEG/2.jpg",
+            "mesa_comedor/JPEG/3.jpg",
+            "mesa_comedor/JPEG/4.jpg",
+            "mesa_comedor/JPEG/5.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -167,7 +209,7 @@
             "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad",
           ],
           precio: 18000,
-          fotos: "sillascomedor",
+          fotos: ["sillas_comedor/JPEG/1.jpg", "sillas_comedor/JPEG/2.jpg"],
           estado: "En venta",
         },
         {
@@ -178,7 +220,7 @@
             "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad",
           ],
           precio: 0,
-          fotos: "sillascomedor",
+          fotos: ["sillas_comedor/JPEG/1.jpg", "sillas_comedor/JPEG/2.jpg"],
           estado: "Reservado",
         },
         {
@@ -189,7 +231,13 @@
             "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad",
           ],
           precio: 70000,
-          fotos: "modularliving",
+          fotos: [
+            "modular_living/JPEG/1.jpg",
+            "modular_living/JPEG/2.jpg",
+            "modular_living/JPEG/3.jpg",
+            "modular_living/JPEG/4.jpg",
+            "modular_living/JPEG/5.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -204,7 +252,17 @@
             " Medidas: ",
           ],
           precio: 25000,
-          fotos: "alacenas",
+          fotos: [
+            "alacenas/alacena_1/JPEG/1.jpg",
+            "alacenas/alacena_1/JPEG/2.jpg",
+            "alacenas/alacena_1/JPEG/3.jpg",
+            "alacenas/alacena_2/JPEG/1.jpg",
+            "alacenas/alacena_2/JPEG/2.jpg",
+            "alacenas/alacena_2/JPEG/3.jpg",
+            "alacenas/alacena_2/JPEG/4.jpg",
+            "alacenas/alacena_3/JPEG/1.jpg",
+            "alacenas/alacena_3/JPEG/2.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -215,7 +273,14 @@
             "Medidas: 86 cm de alto x 52 de largo x 49 de ancho",
           ],
           precio: 95000,
-          fotos: "freezervertical",
+          fotos: [
+            "freezer_vertical/JPEG/1.jpg",
+            "freezer_vertical/JPEG/2.jpg",
+            "freezer_vertical/JPEG/3.jpg",
+            "freezer_vertical/JPEG/4.jpg",
+            "freezer_vertical/JPEG/5.jpg",
+            "freezer_vertical/JPEG/6.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -227,14 +292,24 @@
             "Medida: 1,90 m de alto x 68 cm x 80 cm de profundidad",
           ],
           precio: 0,
-          fotos: "heladera",
+          fotos: [
+            "heladera/JPEG/1.jpg",
+            "heladera/JPEG/2.jpg",
+            "heladera/JPEG/3.jpg",
+            "heladera/JPEG/4.jpg",
+            "heladera/JPEG/5.jpg",
+          ],
           estado: "Reservado",
         },
         {
           descripcion: "Microondas Frigidaire",
           especificaciones: ["Marca: Frigidaire"],
           precio: 19900,
-          fotos: "microondas",
+          fotos: [
+            "microondas/JPEG/1.jpg",
+            "microondas/JPEG/2.jpg",
+            "microondas/JPEG/3.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -245,7 +320,13 @@
             "Marca: ATM",
           ],
           precio: 0,
-          fotos: "hornoelectrico",
+          fotos: [
+            "horno_electrico/JPEG/1.jpg",
+            "horno_electrico/JPEG/2.jpg",
+            "horno_electrico/JPEG/3.jpg",
+            "horno_electrico/JPEG/4.jpg",
+            "horno_electrico/JPEG/5.jpg",
+          ],
           estado: "Reservado",
         },
         {
@@ -255,7 +336,11 @@
             "Medida: 1,20 m de alto x 32 de ancho x 30 de profundidad",
           ],
           precio: 7000,
-          fotos: "alacenavertical",
+          fotos: [
+            "alacena_de_pie/JPEG/1.jpg",
+            "alacena_de_pie/JPEG/2.jpg",
+            "alacena_de_pie/JPEG/3.jpg",
+          ],
           estado: "Reservado",
         },
         {
@@ -266,7 +351,13 @@
             "Medidas: 1,50 m alto x 60 cm largo x 32 cm de ancho",
           ],
           precio: 8000,
-          fotos: "despensero",
+          fotos: [
+            "despensero/JPEG/1.jpg",
+            "despensero/JPEG/2.jpg",
+            "despensero/JPEG/3.jpg",
+            "despensero/JPEG/4.jpg",
+            "despensero/JPEG/5.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -276,7 +367,15 @@
             "Estante 75 cm ancho x 10 cm profundidad x 2 cm de alto",
           ],
           precio: 8000,
-          fotos: "mesarebatible",
+          fotos: [
+            "mesa_rebatible/JPEG/1.jpg",
+            "mesa_rebatible/JPEG/2.jpg",
+            "mesa_rebatible/JPEG/3.jpg",
+            "mesa_rebatible/JPEG/4.jpg",
+            "mesa_rebatible/JPEG/5.jpg",
+            "mesa_rebatible/JPEG/6.jpg",
+            "mesa_rebatible/JPEG/7.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -287,7 +386,12 @@
             "3 unidades",
           ],
           precio: 12000,
-          fotos: "sillahierro",
+          fotos: [
+            "sillas/JPEG/1.jpg",
+            "sillas/JPEG/2.jpg",
+            "sillas/JPEG/3.jpg",
+            "sillas/JPEG/4.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -298,7 +402,12 @@
             "Medidas: 1,40 m de ancho x 1,90 m de largo",
           ],
           precio: 0,
-          fotos: "colchonsommier",
+          fotos: [
+            "cama_dos_plazas/JPEG/1.jpg",
+            "cama_dos_plazas/JPEG/2.jpg",
+            "cama_dos_plazas/JPEG/3.jpg",
+            "cama_dos_plazas/JPEG/4.jpg",
+          ],
           estado: "Reservado",
         },
         {
@@ -310,7 +419,12 @@
             "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho",
           ],
           precio: 0,
-          fotos: "respaldo",
+          fotos: [
+            "cama_dos_plazas/JPEG/1.jpg",
+            "cama_dos_plazas/JPEG/2.jpg",
+            "cama_dos_plazas/JPEG/3.jpg",
+            "cama_dos_plazas/JPEG/4.jpg",
+          ],
           estado: "Reservado",
         },
         {
@@ -322,7 +436,12 @@
             "Medidas: 65 cm de alto x 40 cm de ancho x 45 de largo",
           ],
           precio: 0,
-          fotos: "mesadeluz",
+          fotos: [
+            "mesa_de luz/JPEG/1.jpg",
+            "mesa_de luz/JPEG/2.jpg",
+            "mesa_de luz/JPEG/3.jpg",
+            "mesa_de luz/JPEG/4.jpg",
+          ],
           estado: "Reservado",
         },
         {
@@ -332,7 +451,11 @@
             "Medidas: 80 cm de alto x 1,20 m de largo x 45 cm de ancho",
           ],
           precio: 0,
-          fotos: "comoda",
+          fotos: [
+            "comoda/JPEG/1.jpg",
+            "comoda/JPEG/2.jpg",
+            "comoda/JPEG/3.jpg",
+          ],
           estado: "Reservado",
         },
         {
@@ -342,7 +465,7 @@
             "Medidas: 1,42 m alto x 55 cm ancho x 35 cm profundidad",
           ],
           precio: 9000,
-          fotos: "zapatillero",
+          fotos: ["zapatillero/JPEG/1.jpg", "zapatillero/JPEG/2.jpg"],
           estado: "En venta",
         },
         {
@@ -354,7 +477,12 @@
             "Medidas: 80 cm de alto x 45 cm de ancho x 60 cm de largo",
           ],
           precio: 18000,
-          fotos: "racktv2",
+          fotos: [
+            "rack_tv_2/JPEG/1.jpg",
+            "rack_tv_2/JPEG/2.jpg",
+            "rack_tv_2/JPEG/3.jpg",
+            "rack_tv_2/JPEG/4.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -365,7 +493,12 @@
             "Medidas: 2,20 m de alto x 90 cm de ancho x 60 cm de largo",
           ],
           precio: 40000,
-          fotos: "armario",
+          fotos: [
+            "armario/JPEG/1.jpg",
+            "armario/JPEG/2.jpg",
+            "armario/JPEG/3.jpg",
+            "armario/JPEG/4.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -378,21 +511,33 @@
             "Medidas: 85 cm de alto x 97 cm de ancho x 1,97 m de largo",
           ],
           precio: 35000,
-          fotos: "cama1p",
+          fotos: [
+            "cama_una_plaza/JPEG/1.jpg",
+            "cama_una_plaza/JPEG/2.jpg",
+            "cama_una_plaza/JPEG/3.jpg",
+          ],
           estado: "En venta",
         },
         {
           descripcion: "Colchón 1 plaza espuma alta densidad",
           especificaciones: ["Medidas: 90 cm x 1.90 m"],
           precio: 12000,
-          fotos: "colchon1pd",
+          fotos: [
+            "cama_una_plaza/JPEG/1.jpg",
+            "cama_una_plaza/JPEG/2.jpg",
+            "cama_una_plaza/JPEG/3.jpg",
+          ],
           estado: "En venta",
         },
         {
           descripcion: "Colchón 1 plaza",
           especificaciones: ["Medidas: 80 cm x 1,90 m"],
           precio: 8000,
-          fotos: "colchon1p",
+          fotos: [
+            "colchon/JPEG/1.jpg",
+            "colchon/JPEG/2.jpg",
+            "colchon/JPEG/3.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -405,7 +550,13 @@
             "- Base para pc de escritorio con rueditas",
           ],
           precio: 40000,
-          fotos: "escritorioesquinero",
+          fotos: [
+            "escritorio/JPEG/1.jpg",
+            "escritorio/JPEG/2.jpg",
+            "escritorio/JPEG/3.jpg",
+            "escritorio/JPEG/4.jpg",
+            "escritorio/JPEG/5.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -415,7 +566,12 @@
             "Medidas: 1,40 m de largo x 70 cm de alto x 30 cm de ancho",
           ],
           precio: 22000,
-          fotos: "biblioteca",
+          fotos: [
+            "biblioteca/JPEG/1.jpg",
+            "biblioteca/JPEG/2.jpg",
+            "biblioteca/JPEG/3.jpg",
+            "biblioteca/JPEG/4.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -427,7 +583,15 @@
             "Medidas: 1,70 m de alto x 2 m de largo x 95 cm de ancho",
           ],
           precio: 85000,
-          fotos: "dormitorio",
+          fotos: [
+            "dormitorio_juvenil/JPEG/1.jpg",
+            "dormitorio_juvenil/JPEG/2.jpg",
+            "dormitorio_juvenil/JPEG/3.jpg",
+            "dormitorio_juvenil/JPEG/4.jpg",
+            "dormitorio_juvenil/JPEG/5.jpg",
+            "dormitorio_juvenil/JPEG/6.jpg",
+            "dormitorio_juvenil/JPEG/7.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -440,8 +604,13 @@
             "Potencia: 5,8 Kw",
             "Potencia Máxima: 5000 kcal/h",
           ],
-          precio: 254000,
-          fotos: "estufa",
+          precio: 25400,
+          fotos: [
+            "estufa/JPEG/1.jpg",
+            "estufa/JPEG/2.jpg",
+            "estufa/JPEG/3.jpg",
+            "estufa/JPEG/4.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -452,7 +621,12 @@
             "Marca: Kacemaster",
           ],
           precio: 19000,
-          fotos: "calefactor",
+          fotos: [
+            "calefactor/JPEG/1.jpg",
+            "calefactor/JPEG/2.jpg",
+            "calefactor/JPEG/3.jpg",
+            "calefactor/JPEG/4.jpg",
+          ],
           estado: "En venta",
         },
         {
@@ -466,7 +640,7 @@
             "Dispositivos: Teclado, mouse, parlantes USB y cable power",
           ],
           precio: 30000,
-          fotos: "pcescritorio",
+          fotos: ["pc_de_escritorio/JPEG/1.jpg", "pc_de_escritorio/JPEG/2.jpg"],
           estado: "En venta",
         },
         {
@@ -478,21 +652,30 @@
             "Incluye cartuchos con poco uso",
           ],
           precio: 10000,
-          fotos: "impresora",
+          fotos: [
+            "impresora/JPEG/1.jpg",
+            "impresora/JPEG/2.jpg",
+            "impresora/JPEG/3.jpg",
+          ],
           estado: "En venta",
         },
         {
           descripcion: "Guitarra",
           especificaciones: ["Medio Concierto", "Casa Nuñez"],
           precio: 7000,
-          fotos: "guitarra",
-          estado: "En venta",
+          fotos: [
+            "guitarra/JPEG/1.jpg",
+            "guitarra/JPEG/2.jpg",
+            "guitarra/JPEG/3.jpg",
+            "guitarra/JPEG/4.jpg",
+          ],
+          estado: "Vendido",
         },
         {
           descripcion: "Lector de cintas",
           especificaciones: [],
           precio: 0,
-          fotos: "lectordecintas",
+          fotos: ["lector_de_cintas/JPEG/1.jpg", "lector_de_cintas/JPEG/2.jpg"],
           estado: "En venta",
         },
       ];
@@ -502,15 +685,31 @@
         const div = document.createElement("div");
         div.className = "card";
         div.innerHTML =
-          '<img src="img/cubiertos.webp" class="card-img-top" alt="..." />' +
+          '<div class="splide">' +
+          ' <div class="splide__track">' +
+          '   <ul class="splide__list">' +
+          producto.fotos
+            .map(
+              (foto) =>
+                '     <li class="splide__slide card-img-top" data-src="img/' +
+                foto +
+                '">' +
+                '       <img src="img/' +
+                foto +
+                '" alt="" /></li>'
+            )
+            .join("") +
+          "   </ul>" +
+          " </div>" +
+          "</div>" +
           '<div class="card-body">' +
           '<h5 class="card-title">' +
           producto.descripcion +
           "</h5>" +
           '<p class="card-text">' +
-          producto.especificaciones.map(
-            (especificaciones) => especificaciones + "<br />"
-          ) +
+          producto.especificaciones
+            .map((especificaciones) => especificaciones + "<br />")
+            .join("") +
           "</p>" +
           '<a href="#" class="btn ' +
           (producto.estado == "En venta"
@@ -526,6 +725,16 @@
           "</div>";
         cards.appendChild(div);
       });
+
+      document
+        .querySelectorAll(".splide")
+        .forEach((carousel) => new Splide(carousel).mount());
+
+      document.querySelectorAll(".splide__list").forEach((slide) =>
+        lightGallery(slide, {
+          thumbnail: true,
+        })
+      );
     </script>
   </body>
 </html>
