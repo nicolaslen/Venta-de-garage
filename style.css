@@ -19,7 +19,7 @@ body {
   background-color: #fcfffe;
 }
 .card-text {
-  max-height: 100px;
+  max-height: 112px;
   display: flex;
   overflow-y: auto;
 }
