@@ -711,7 +711,7 @@
             .map((especificaciones) => especificaciones + "<br />")
             .join("") +
           "</p>" +
-          '<a href="#" class="btn ' +
+          '<div class="btn ' +
           (producto.estado == "En venta"
             ? "btn-primary"
             : producto.estado == "Reservado"
@@ -721,7 +721,7 @@
           (producto.estado == "En venta"
             ? "$ " + producto.precio.toLocaleString()
             : producto.estado) +
-          "  </a>" +
+          "  </div>" +
           "</div>";
         cards.appendChild(div);
       });
