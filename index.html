@@ -719,7 +719,7 @@
             : "btn-danger") +
           '">' +
           (producto.estado == "En venta"
-            ? "$ " + producto.precio.toLocaleString()
+            ? "$ " + producto.precio.toLocaleString("es-AR")
             : producto.estado) +
           "  </div>" +
           "</div>";
