@@ -249,10 +249,7 @@
         },
         {
           descripcion: "Alacena 1",
-          especificaciones: [
-            "Alacena 1:",
-            " Medidas: 60cm alto x 79,5 ancho",
-          ],
+          especificaciones: ["Alacena 1:", " Medidas: 60cm alto x 79,5 ancho"],
           precio: 25000,
           fotos: [
             "alacenas/alacena_1/JPEG/1.jpg",
@@ -279,10 +276,7 @@
         },
         {
           descripcion: "Alacena 3",
-          especificaciones: [
-            "Alacena 3:",
-            " Medidas: ",
-          ],
+          especificaciones: ["Alacena 3:", " Medidas: "],
           precio: 25000,
           fotos: [
             "alacenas/alacena_3/JPEG/1.jpg",
@@ -696,51 +690,61 @@
         },
       ];
 
-      productos.forEach((producto) => {
-        const cards = document.getElementsByClassName("cards")[0];
-        const div = document.createElement("div");
-        div.className = "card";
-        div.innerHTML =
-          '<div class="splide">' +
-          ' <div class="splide__track">' +
-          '   <ul class="splide__list">' +
-          producto.fotos
-            .map(
-              (foto) =>
-                '     <li class="splide__slide card-img-top" data-src="img/' +
-                foto +
-                '">' +
-                '       <img src="img/' +
-                foto +
-                '" alt="" /></li>'
-            )
-            .join("") +
-          "   </ul>" +
-          " </div>" +
-          "</div>" +
-          '<div class="card-body">' +
-          '<h5 class="card-title">' +
-          producto.descripcion +
-          "</h5>" +
-          '<p class="card-text">' +
-          producto.especificaciones
-            .map((especificaciones) => especificaciones + "<br />")
-            .join("") +
-          "</p>" +
-          '<div class="btn ' +
-          (producto.estado == "En venta"
-            ? "btn-primary"
-            : producto.estado == "Reservado"
-            ? "btn-success"
-            : "btn-danger") +
-          '">' +
-          (producto.estado == "En venta"
-            ? "$ " + producto.precio.toLocaleString("es-AR")
-            : producto.estado) +
-          "  </div>" +
-          "</div>";
-        cards.appendChild(div);
-      });
+      productos
+        .sort((a, b) =>
+          a.estado == "En venta"
+            ? b.estado != "En venta"
+              ? 1
+              : 0
+            : b.estado == "En venta"
+            ? -1
+            : 0
+        )
+        .forEach((producto) => {
+          const cards = document.getElementsByClassName("cards")[0];
+          const div = document.createElement("div");
+          div.className = "card";
+          div.innerHTML =
+            '<div class="splide">' +
+            ' <div class="splide__track">' +
+            '   <ul class="splide__list">' +
+            producto.fotos
+              .map(
+                (foto) =>
+                  '     <li class="splide__slide card-img-top" data-src="img/' +
+                  foto +
+                  '">' +
+                  '       <img src="img/' +
+                  foto +
+                  '" alt="" /></li>'
+              )
+              .join("") +
+            "   </ul>" +
+            " </div>" +
+            "</div>" +
+            '<div class="card-body">' +
+            '<h5 class="card-title">' +
+            producto.descripcion +
+            "</h5>" +
+            '<p class="card-text">' +
+            producto.especificaciones
+              .map((especificaciones) => especificaciones + "<br />")
+              .join("") +
+            "</p>" +
+            '<div class="btn ' +
+            (producto.estado == "En venta"
+              ? "btn-primary"
+              : producto.estado == "Reservado"
+              ? "btn-success"
+              : "btn-danger") +
+            '">' +
+            (producto.estado == "En venta"
+              ? "$ " + producto.precio.toLocaleString("es-AR")
+              : producto.estado) +
+            "  </div>" +
+            "</div>";
+          cards.appendChild(div);
+        });
 
       document
         .querySelectorAll(".splide")
