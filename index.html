@@ -1,759 +1,780 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Venta de Garage</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var splide = new Splide(".splide");
-        splide.mount();
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav class="navbar" style="background-color: #fcfffe">
-      <div class="container-fluid">
-        <h2 style="width: 100%; text-align: center">Venta de Garage</h2>
-      </div>
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://wa.me/5491157105974"
-          ><img src="./img/whatsapp.png" alt="" style="width: 25px" /> Liliana -
-          1157105974
-        </a>
-      </div>
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://wa.me/5491139216721"
-          ><img src="./img/whatsapp.png" alt="" style="width: 25px" /> Leila -
-          1139216721
-        </a>
-      </div>
-      <div class="container-fluid">
-        No incluye envío. Se retira por Villa Crespo.
-      </div>
-      <div class="container-fluid">Su consulta no molesta. Gracias!</div>
-      <div
-        class="container-fluid justify-content-center"
-        style="font-size: smaller"
-      >
-        Puede hacer clic en las imágenes para agrandarlas!
-      </div>
-    </nav>
 
-    <div class="cards"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venta de Garage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var splide = new Splide(".splide");
+      splide.mount();
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" rel="stylesheet" />
+</head>
 
-    <div class="flotante">
-      <a href="https://wa.me/5491157105974" class="flotante__contico whatsapp">
-        <img src="./img/whatsapp.png" alt="" style="width: 45px" />
+<body>
+  <nav class="navbar" style="background-color: #fcfffe">
+    <div class="container-fluid">
+      <h2 style="width: 100%; text-align: center">Venta de Garage</h2>
+    </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://wa.me/5491157105974"><img src="./img/whatsapp.png" alt=""
+          style="width: 25px" /> Liliana -
+        1157105974
       </a>
     </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://wa.me/5491139216721"><img src="./img/whatsapp.png" alt=""
+          style="width: 25px" /> Leila -
+        1139216721
+      </a>
+    </div>
+    <div class="container-fluid">
+      No incluye envío. Se retira por Villa Crespo.
+    </div>
+    <div class="container-fluid">Su consulta no molesta. Gracias!</div>
+    <div class="container-fluid justify-content-center" style="font-size: smaller">
+      Puede hacer clic en las imágenes para agrandarlas!
+    </div>
+  </nav>
 
-    <script>
-      const productos = [
-        {
-          descripcion: "2 Sillas Negras Jardín",
-          especificaciones: ["2 Sillas Negras Jardín", "Medidas: 75cm de alto"],
-          precio: 13000,
-          fotos: ["sillas_jardin/JPEG/1.jpg", "sillas_jardin/JPEG/2.jpg"],
-          estado: "Vendido",
-        },
-        {
-          descripcion: "2 Sillas Negras Jardín",
-          especificaciones: ["2 Sillas Negras Jardín", "Medidas: 75cm de alto"],
-          precio: 13000,
-          fotos: ["sillas_jardin/JPEG/1.jpg", "sillas_jardin/JPEG/2.jpg"],
-          estado: "Reservado",
-        },
-        {
-          descripcion: "Rack para TV",
-          especificaciones: [
-            "Medidas: 44 cm de ancho x 78 cm de alto",
-            "Con cajonera y puertas de vidrio",
-          ],
-          precio: 7000,
-          fotos: ["rack_tv/JPEG/1.jpg", "rack_tv/JPEG/2.jpg"],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Minicomponente AIWA",
-          especificaciones: [
-            "Modelo: NSX-S333",
-            "Medidas: 33 cm de alto x 23,5 cm de ancho",
-            "Potencia: 30 W",
-            "Bandeja para 3 CDs funcionando",
-            "Radio AM-FM",
-            "Control Remoto original",
-            "Doble cassettera",
-            "Parlantes originales",
-            "",
-            "Defectos: ",
-            "- La lectora de CD se abre la primera vez que la cerrás",
-            "- La rosca del volumen a veces hace falso contacto",
-            "Todo es reparable. El audio funciona excelente. ",
-            "Incluye un cable miniplug para conectar tu celular!",
-          ],
-          precio: 25000,
-          fotos: [
-            "minicomponente_aiwa/JPEG/1.jpg",
-            "minicomponente_aiwa/JPEG/2.jpg",
-            "minicomponente_aiwa/JPEG/3.jpg",
-            "minicomponente_aiwa/JPEG/4.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Sillón dos cuerpos",
-          especificaciones: [
-            "Material: Cuero ecológico",
-            "Ideal para retapizar",
-            "Medidas: 90 cm de ancho x 65 cm de alto x 1,60 cm de largo",
-            "Viene con 3 almohadas de regalo",
-          ],
-          precio: 0,
-          fotos: [
-            "sillon_dos_cuerpos/JPEG/1.jpg",
-            "sillon_dos_cuerpos/JPEG/2.jpg",
-            "sillon_dos_cuerpos/JPEG/3.jpg",
-          ],
-          estado: "Reservado",
-        },
-        {
-          descripcion: "Sillón un cuerpo",
-          especificaciones: [
-            "Material: Cuero ecológico",
-            "Ideal para retapizar",
-            "Medidas: 72 cm de alto x 65 de ancho",
-          ],
-          precio: 7000,
-          fotos: [
-            "sillon_un_cuerpo/JPEG/1.jpg",
-            "sillon_un_cuerpo/JPEG/2.jpg",
-            "sillon_un_cuerpo/JPEG/3.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Puff",
-          especificaciones: [
-            "Material: Cuero ecológico",
-            "Ideal para retapizar",
-            "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho",
-          ],
-          precio: 7000,
-          fotos: ["puff/JPEG/1.jpg", "puff/JPEG/2.jpg"],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Mesa ratona",
-          especificaciones: [
-            "Material: Madera laqueada negra con vidrio",
-            "Color: Negro",
-            "Medidas: Dos cuerpos juntos de 70 cm largo x 45 cm ancho",
-            "Total: 45 de ancho x 40 cm de alto x 95 cm de largo",
-          ],
-          precio: 0,
-          fotos: ["mesa_ratona/JPEG/1.jpg", "mesa_ratona/JPEG/2.jpg"],
-          estado: "Reservado",
-        },
-        {
-          descripcion: "Mesa de velador",
-          especificaciones: [
-            "Material: Melamina",
-            "Medidas: 52 cm ancho x 52 cm profundidad x 65 cm alto",
-            "Viene con un mantel de regalo",
-            "Defecto: Hay que limar las patas para reparar el desgaste",
-          ],
-          precio: 5000,
-          fotos: ["mesa_de velador/JPEG/1.jpg", "mesa_de velador/JPEG/2.jpg"],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Mesa comedor",
-          especificaciones: [
-            "Mesa de Madera Maciza Extensible Thonet",
-            "Medidas:",
-            "75 cm de alto x 1,80 m de largo x 1 m de ancho",
-            "Se extiende a 2,35 m de largo",
-          ],
-          precio: 90000,
-          fotos: [
-            "mesa_comedor/JPEG/1.jpg",
-            "mesa_comedor/JPEG/2.jpg",
-            "mesa_comedor/JPEG/3.jpg",
-            "mesa_comedor/JPEG/4.jpg",
-            "mesa_comedor/JPEG/5.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Sillas comedor",
-          especificaciones: [
-            "2 Sillas de Madera Paraiso y Cuero Ecológico",
-            "Color: Paraiso natural",
-            "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad",
-          ],
-          precio: 18000,
-          fotos: ["sillas_comedor/JPEG/1.jpg", "sillas_comedor/JPEG/2.jpg"],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Sillas comedor",
-          especificaciones: [
-            "4 Sillas de Madera Paraiso y Cuero Ecológico",
-            "Color: Paraiso natural",
-            "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad",
-          ],
-          precio: 0,
-          fotos: ["sillas_comedor/JPEG/1.jpg", "sillas_comedor/JPEG/2.jpg"],
-          estado: "Reservado",
-        },
-        {
-          descripcion: "Aparador/Modular para living",
-          especificaciones: [
-            "2 Sillas de Madera Paraiso y Cuero Ecológico",
-            "Color: Paraiso natural",
-            "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad",
-          ],
-          precio: 70000,
-          fotos: [
-            "modular_living/JPEG/1.jpg",
-            "modular_living/JPEG/2.jpg",
-            "modular_living/JPEG/3.jpg",
-            "modular_living/JPEG/4.jpg",
-            "modular_living/JPEG/5.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Alacena 1",
-          especificaciones: ["Medidas: 60cm alto x 79,5 ancho"],
-          precio: 25000,
-          fotos: [
-            "alacenas/alacena_1/JPEG/1.jpg",
-            "alacenas/alacena_1/JPEG/2.jpg",
-            "alacenas/alacena_1/JPEG/3.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Alacena 2",
-          especificaciones: [
-            "Medidas: 100 cm ancho x 60 cm alto x 33 cm profundidad",
-            "                (ancho: 77 cm placard + 23 cm estante)",
-          ],
-          precio: 25000,
-          fotos: [
-            "alacenas/alacena_2/JPEG/1.jpg",
-            "alacenas/alacena_2/JPEG/2.jpg",
-            "alacenas/alacena_2/JPEG/3.jpg",
-            "alacenas/alacena_2/JPEG/4.jpg",
-          ],
-          estado: "Vendido",
-        },
-        {
-          descripcion: "Alacena 3",
-          especificaciones: ["Medidas: "],
-          precio: 25000,
-          fotos: [
-            "alacenas/alacena_3/JPEG/1.jpg",
-            "alacenas/alacena_3/JPEG/2.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Freezer Vertical Whirlpool",
-          especificaciones: [
-            "Marca: Whirlpool",
-            "Incluye 4 estantes",
-            "Medidas: 86 cm de alto x 52 de largo x 49 de ancho",
-          ],
-          precio: 95000,
-          fotos: [
-            "freezer_vertical/JPEG/1.jpg",
-            "freezer_vertical/JPEG/2.jpg",
-            "freezer_vertical/JPEG/3.jpg",
-            "freezer_vertical/JPEG/4.jpg",
-            "freezer_vertical/JPEG/5.jpg",
-            "freezer_vertical/JPEG/6.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Heladera con Freezer General Electric",
-          especificaciones: [
-            "Heladera con Freezer No Frost Plateada",
-            "Incluye dispenser de agua y luz digital",
-            "Marca: General Electric",
-            "Medida: 1,90 m de alto x 68 cm x 80 cm de profundidad",
-          ],
-          precio: 0,
-          fotos: [
-            "heladera/JPEG/1.jpg",
-            "heladera/JPEG/2.jpg",
-            "heladera/JPEG/3.jpg",
-            "heladera/JPEG/4.jpg",
-            "heladera/JPEG/5.jpg",
-          ],
-          estado: "Reservado",
-        },
-        {
-          descripcion: "Microondas Frigidaire",
-          especificaciones: ["Marca: Frigidaire"],
-          precio: 19900,
-          fotos: [
-            "microondas/JPEG/1.jpg",
-            "microondas/JPEG/2.jpg",
-            "microondas/JPEG/3.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Horno Eléctrico",
-          especificaciones: [
-            "Horno Eléctrico con estante",
-            "Incluye bandeja de regalo",
-            "Marca: ATM",
-          ],
-          precio: 0,
-          fotos: [
-            "horno_electrico/JPEG/1.jpg",
-            "horno_electrico/JPEG/2.jpg",
-            "horno_electrico/JPEG/3.jpg",
-            "horno_electrico/JPEG/4.jpg",
-            "horno_electrico/JPEG/5.jpg",
-          ],
-          estado: "Reservado",
-        },
-        {
-          descripcion: "Alacena vertical de pie",
-          especificaciones: [
-            "Material: Madera laqueada blanca",
-            "Medida: 1,20 m de alto x 32 de ancho x 30 de profundidad",
-          ],
-          precio: 7000,
-          fotos: [
-            "alacena_de_pie/JPEG/1.jpg",
-            "alacena_de_pie/JPEG/2.jpg",
-            "alacena_de_pie/JPEG/3.jpg",
-          ],
-          estado: "Reservado",
-        },
-        {
-          descripcion: "Despensero/alacena de pie",
-          especificaciones: [
-            "Despensero/alacena con doble puerta y estantes",
-            "Material: Madera laqueada blanca",
-            "Medidas: 1,50 m alto x 60 cm largo x 32 cm de ancho",
-          ],
-          precio: 8000,
-          fotos: [
-            "despensero/JPEG/1.jpg",
-            "despensero/JPEG/2.jpg",
-            "despensero/JPEG/3.jpg",
-            "despensero/JPEG/4.jpg",
-            "despensero/JPEG/5.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Mesa rebatible de pared",
-          especificaciones: [
-            "Medidas:Mesa 75 cm ancho x 47 cm profundidad x 2 cm de alto",
-            "Estante 75 cm ancho x 10 cm profundidad x 2 cm de alto",
-          ],
-          precio: 8000,
-          fotos: [
-            "mesa_rebatible/JPEG/1.jpg",
-            "mesa_rebatible/JPEG/2.jpg",
-            "mesa_rebatible/JPEG/3.jpg",
-            "mesa_rebatible/JPEG/4.jpg",
-            "mesa_rebatible/JPEG/5.jpg",
-            "mesa_rebatible/JPEG/6.jpg",
-            "mesa_rebatible/JPEG/7.jpg",
-          ],
-          estado: "Vendido",
-        },
-        {
-          descripcion: "Sillas de hierro con cuero ecológico",
-          especificaciones: [
-            "Juego de Sillas",
-            "Material: Hierro con cuero ecológico",
-            "3 unidades",
-          ],
-          precio: 12000,
-          fotos: [
-            "sillas/JPEG/1.jpg",
-            "sillas/JPEG/2.jpg",
-            "sillas/JPEG/3.jpg",
-            "sillas/JPEG/4.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Colchón + Sommier 2 plazas con resortes",
-          especificaciones: [
-            "Marca: Sucam",
-            "Tipo de colchon: Resortes",
-            "Medidas: 1,40 m de ancho x 1,90 m de largo",
-          ],
-          precio: 0,
-          fotos: [
-            "cama_dos_plazas/JPEG/1.jpg",
-            "cama_dos_plazas/JPEG/2.jpg",
-            "cama_dos_plazas/JPEG/3.jpg",
-            "cama_dos_plazas/JPEG/4.jpg",
-          ],
-          estado: "Reservado",
-        },
-        {
-          descripcion: "Respaldo de cama",
-          especificaciones: [
-            "Respaldo de 2 Plazas",
-            "Material: madera Laqueada Blanca y Capitone de Cuero Ecológico",
-            "Color Crema",
-            "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho",
-          ],
-          precio: 0,
-          fotos: ["cama_dos_plazas/JPEG/3.jpg", "cama_dos_plazas/JPEG/4.jpg"],
-          estado: "Reservado",
-        },
-        {
-          descripcion: "Mesa de luz",
-          especificaciones: [
-            "Mesas de Luz",
-            "Dos unidades",
-            "Material:Madera laqueada blanca con dos cajones y desayunador",
-            "Medidas: 65 cm de alto x 40 cm de ancho x 45 de largo",
-          ],
-          precio: 0,
-          fotos: [
-            "mesa_de luz/JPEG/1.jpg",
-            "mesa_de luz/JPEG/2.jpg",
-            "mesa_de luz/JPEG/3.jpg",
-            "mesa_de luz/JPEG/4.jpg",
-          ],
-          estado: "Reservado",
-        },
-        {
-          descripcion: "Cómoda",
-          especificaciones: [
-            "Cómoda de madera laqueada blanca con cajoneras",
-            "Medidas: 80 cm de alto x 1,20 m de largo x 45 cm de ancho",
-          ],
-          precio: 0,
-          fotos: [
-            "comoda/JPEG/1.jpg",
-            "comoda/JPEG/2.jpg",
-            "comoda/JPEG/3.jpg",
-          ],
-          estado: "Reservado",
-        },
-        {
-          descripcion: "Zapatillero",
-          especificaciones: [
-            "Mueble de madera con estantes y cajonera para apoyar zapatillas",
-            "Medidas: 1,42 m alto x 55 cm ancho x 35 cm profundidad",
-          ],
-          precio: 9000,
-          fotos: ["zapatillero/JPEG/1.jpg", "zapatillero/JPEG/2.jpg"],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Rack para TV 2",
-          especificaciones: [
-            "Rack para TV con placard",
-            "Incluye hueco para deco/consolas con agujero al fondo para cables",
-            "Material: Madera laqueada blanca",
-            "Medidas: 80 cm de alto x 45 cm de ancho x 60 cm de largo",
-          ],
-          precio: 18000,
-          fotos: [
-            "rack_tv_2/JPEG/4.jpg",
-            "rack_tv_2/JPEG/3.jpg",
-            "rack_tv_2/JPEG/2.jpg",
-            "rack_tv_2/JPEG/1.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Armario",
-          especificaciones: [
-            "Armario/Ropero de madera con cajonera, espacios para ropa y zapatillas",
-            "Material: madera laqueada",
-            "Medidas: 2,20 m de alto x 90 cm de ancho x 60 cm de largo",
-          ],
-          precio: 40000,
-          fotos: [
-            "armario/JPEG/1.jpg",
-            "armario/JPEG/2.jpg",
-            "armario/JPEG/3.jpg",
-            "armario/JPEG/4.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Cama 1 plaza",
-          especificaciones: [
-            "Incluye:",
-            "- 3 cajones amplios",
-            "- Hueco para guardar un segundo colchón",
-            "Material: Madera laqueada",
-            "Medidas: 85 cm de alto x 97 cm de ancho x 1,97 m de largo",
-          ],
-          precio: 35000,
-          fotos: [
-            "cama_una_plaza/JPEG/1.jpg",
-            "cama_una_plaza/JPEG/2.jpg",
-            "cama_una_plaza/JPEG/3.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Colchón 1 plaza espuma alta densidad",
-          especificaciones: ["Medidas: 90 cm x 1.90 m"],
-          precio: 12000,
-          fotos: ["cama_una_plaza/JPEG/1.jpg"],
-          estado: "Vendido",
-        },
-        {
-          descripcion: "Colchón 1 plaza",
-          especificaciones: ["Medidas: 80 cm x 1,90 m"],
-          precio: 8000,
-          fotos: [
-            "colchon/JPEG/1.jpg",
-            "colchon/JPEG/2.jpg",
-            "colchon/JPEG/3.jpg",
-          ],
-          estado: "Vendido",
-        },
-        {
-          descripcion: "Escritorio Esquinero con Cajonera",
-          especificaciones: [
-            "Material: Madera laqueada blanca",
-            "Medidas: 1,25 m x 1,60 m",
-            "Incluye:",
-            "- Base para pantalla",
-            "- Base para pc de escritorio con rueditas",
-          ],
-          precio: 40000,
-          fotos: [
-            "escritorio/JPEG/1.jpg",
-            "escritorio/JPEG/2.jpg",
-            "escritorio/JPEG/3.jpg",
-            "escritorio/JPEG/4.jpg",
-            "escritorio/JPEG/5.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Biblioteca con armario",
-          especificaciones: [
-            "Material: Madera laqueada blanca",
-            "Medidas: 1,40 m de largo x 70 cm de alto x 30 cm de ancho",
-          ],
-          precio: 22000,
-          fotos: [
-            "biblioteca/JPEG/1.jpg",
-            "biblioteca/JPEG/2.jpg",
-            "biblioteca/JPEG/3.jpg",
-            "biblioteca/JPEG/4.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Dormitorio juvenil",
-          especificaciones: [
-            "Arriba: Cama marinera con colchón",
-            "Abajo: Escritorio con escalera, estantes, cajonera y doble armario",
-            "Material: Madera laqueada blanca",
-            "Medidas: 1,70 m de alto x 2 m de largo x 95 cm de ancho",
-          ],
-          precio: 85000,
-          fotos: [
-            "dormitorio_juvenil/JPEG/1.jpg",
-            "dormitorio_juvenil/JPEG/2.jpg",
-            "dormitorio_juvenil/JPEG/3.jpg",
-            "dormitorio_juvenil/JPEG/4.jpg",
-            "dormitorio_juvenil/JPEG/5.jpg",
-            "dormitorio_juvenil/JPEG/6.jpg",
-            "dormitorio_juvenil/JPEG/7.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Estufa Orbis 416",
-          especificaciones: [
-            "Marca: Orbis",
-            "Modelo: 416",
-            "Tipo: A gas - Tiro balanceado",
-            "Medidas: 70 cm de ancho x 60 cm de alto x 15 cm de profundidad",
-            "Potencia: 5,8 Kw",
-            "Potencia Máxima: 5000 kcal/h",
-          ],
-          precio: 25400,
-          fotos: [
-            "estufa/JPEG/1.jpg",
-            "estufa/JPEG/2.jpg",
-            "estufa/JPEG/3.jpg",
-            "estufa/JPEG/4.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Calefactor Kacemaster",
-          especificaciones: [
-            "Calefactor de aceite eléctrico",
-            "Portable con ruedas",
-            "Marca: Kacemaster",
-          ],
-          precio: 19000,
-          fotos: [
-            "calefactor/JPEG/1.jpg",
-            "calefactor/JPEG/2.jpg",
-            "calefactor/JPEG/3.jpg",
-            "calefactor/JPEG/4.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "PC de escritorio",
-          especificaciones: [
-            "AMD Athlon 5150 APU with Radeon R3 1.60 GHz",
-            "Disco SSD 240 GB",
-            "4 GB RAM",
-            "Incluye:",
-            "Programas: Windows 10, paquete Office, antivirus",
-            "Dispositivos: Teclado, mouse, parlantes USB y cable power",
-          ],
-          precio: 30000,
-          fotos: ["pc_de_escritorio/JPEG/1.jpg", "pc_de_escritorio/JPEG/2.jpg"],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Impresora HP Deskjet F4180",
-          especificaciones: [
-            "Modelo: HP Deskjet F4180",
-            "Multifunción impresora - escáner",
-            "Inyección de tinta",
-            "Incluye cartuchos con poco uso",
-          ],
-          precio: 10000,
-          fotos: [
-            "impresora/JPEG/3.jpg",
-            "impresora/JPEG/2.jpg",
-            "impresora/JPEG/1.jpg",
-          ],
-          estado: "En venta",
-        },
-        {
-          descripcion: "Guitarra",
-          especificaciones: ["Medio Concierto", "Casa Nuñez"],
-          precio: 7000,
-          fotos: [
-            "guitarra/JPEG/1.jpg",
-            "guitarra/JPEG/2.jpg",
-            "guitarra/JPEG/3.jpg",
-            "guitarra/JPEG/4.jpg",
-          ],
-          estado: "Vendido",
-        },
-        {
-          descripcion: "Lector de cintas",
-          especificaciones: [],
-          precio: 0,
-          fotos: ["lector_de_cintas/JPEG/1.jpg", "lector_de_cintas/JPEG/2.jpg"],
-          estado: "En venta",
-        },
-      ];
+  <div class="cards"></div>
 
-      productos
-        .sort((a, b) =>
-          a.estado == "En venta"
-            ? b.estado != "En venta"
-              ? 1
-              : 0
-            : b.estado == "En venta"
+  <div class="flotante">
+    <a href="https://wa.me/5491157105974" class="flotante__contico whatsapp">
+      <img src="./img/whatsapp.png" alt="" style="width: 45px" />
+    </a>
+  </div>
+
+  <script>
+    const productos = [
+      {
+        descripcion: "2 Sillas Negras Jardín",
+        especificaciones: ["2 Sillas Negras Jardín", "Medidas: 75cm de alto"],
+        precio: 13000,
+        fotos: ["sillas_jardin/JPEG/1.jpg", "sillas_jardin/JPEG/2.jpg"],
+        estado: "Vendido",
+      },
+      {
+        descripcion: "2 Sillas Negras Jardín",
+        especificaciones: ["2 Sillas Negras Jardín", "Medidas: 75cm de alto"],
+        precio: 13000,
+        fotos: ["sillas_jardin/JPEG/1.jpg", "sillas_jardin/JPEG/2.jpg"],
+        estado: "Reservado",
+      },
+      {
+        descripcion: "Rack para TV",
+        especificaciones: [
+          "Medidas: 44 cm de ancho x 78 cm de alto",
+          "Con cajonera y puertas de vidrio",
+        ],
+        precio: 7000,
+        fotos: ["rack_tv/JPEG/1.jpg", "rack_tv/JPEG/2.jpg"],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Minicomponente AIWA",
+        especificaciones: [
+          "Modelo: NSX-S333",
+          "Medidas: 33 cm de alto x 23,5 cm de ancho",
+          "Potencia: 30 W",
+          "Bandeja para 3 CDs funcionando",
+          "Radio AM-FM",
+          "Control Remoto original",
+          "Doble cassettera",
+          "Parlantes originales",
+          "",
+          "Defectos: ",
+          "- La lectora de CD se abre la primera vez que la cerrás",
+          "- La rosca del volumen a veces hace falso contacto",
+          "Todo es reparable. El audio funciona excelente. ",
+          "Incluye un cable miniplug para conectar tu celular!",
+        ],
+        precio: 25000,
+        fotos: [
+          "minicomponente_aiwa/JPEG/1.jpg",
+          "minicomponente_aiwa/JPEG/2.jpg",
+          "minicomponente_aiwa/JPEG/3.jpg",
+          "minicomponente_aiwa/JPEG/4.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Sillón dos cuerpos",
+        especificaciones: [
+          "Material: Cuero ecológico",
+          "Ideal para retapizar",
+          "Medidas: 90 cm de ancho x 65 cm de alto x 1,60 cm de largo",
+          "Viene con 3 almohadas de regalo",
+        ],
+        precio: 0,
+        fotos: [
+          "sillon_dos_cuerpos/JPEG/1.jpg",
+          "sillon_dos_cuerpos/JPEG/2.jpg",
+          "sillon_dos_cuerpos/JPEG/3.jpg",
+        ],
+        estado: "Reservado",
+      },
+      {
+        descripcion: "Sillón un cuerpo",
+        especificaciones: [
+          "Material: Cuero ecológico",
+          "Ideal para retapizar",
+          "Medidas: 72 cm de alto x 65 de ancho",
+        ],
+        precio: 7000,
+        fotos: [
+          "sillon_un_cuerpo/JPEG/1.jpg",
+          "sillon_un_cuerpo/JPEG/2.jpg",
+          "sillon_un_cuerpo/JPEG/3.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Puff",
+        especificaciones: [
+          "Material: Cuero ecológico",
+          "Ideal para retapizar",
+          "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho",
+        ],
+        precio: 7000,
+        fotos: ["puff/JPEG/1.jpg", "puff/JPEG/2.jpg"],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Mesa ratona",
+        especificaciones: [
+          "Material: Madera laqueada negra con vidrio",
+          "Color: Negro",
+          "Medidas: Dos cuerpos juntos de 70 cm largo x 45 cm ancho",
+          "Total: 45 de ancho x 40 cm de alto x 95 cm de largo",
+        ],
+        precio: 0,
+        fotos: ["mesa_ratona/JPEG/1.jpg", "mesa_ratona/JPEG/2.jpg"],
+        estado: "Reservado",
+      },
+      {
+        descripcion: "Mesa de velador",
+        especificaciones: [
+          "Material: Melamina",
+          "Medidas: 52 cm ancho x 52 cm profundidad x 65 cm alto",
+          "Viene con un mantel de regalo",
+          "Defecto: Hay que limar las patas para reparar el desgaste",
+        ],
+        precio: 5000,
+        fotos: ["mesa_de velador/JPEG/1.jpg", "mesa_de velador/JPEG/2.jpg"],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Mesa comedor",
+        especificaciones: [
+          "Mesa de Madera Maciza Extensible Thonet",
+          "Medidas:",
+          "75 cm de alto x 1,80 m de largo x 1 m de ancho",
+          "Se extiende a 2,35 m de largo",
+        ],
+        precio: 90000,
+        fotos: [
+          "mesa_comedor/JPEG/1.jpg",
+          "mesa_comedor/JPEG/2.jpg",
+          "mesa_comedor/JPEG/3.jpg",
+          "mesa_comedor/JPEG/4.jpg",
+          "mesa_comedor/JPEG/5.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Sillas comedor",
+        especificaciones: [
+          "2 Sillas de Madera Paraiso y Cuero Ecológico",
+          "Color: Paraiso natural",
+          "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad",
+        ],
+        precio: 18000,
+        fotos: ["sillas_comedor/JPEG/1.jpg", "sillas_comedor/JPEG/2.jpg"],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Sillas comedor",
+        especificaciones: [
+          "4 Sillas de Madera Paraiso y Cuero Ecológico",
+          "Color: Paraiso natural",
+          "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad",
+        ],
+        precio: 0,
+        fotos: ["sillas_comedor/JPEG/1.jpg", "sillas_comedor/JPEG/2.jpg"],
+        estado: "Reservado",
+      },
+      {
+        descripcion: "Aparador/Modular para living",
+        especificaciones: [
+          "2 Sillas de Madera Paraiso y Cuero Ecológico",
+          "Color: Paraiso natural",
+          "Medidas: 95 cm de alto x 45 cm de largo x 43 de profundidad",
+        ],
+        precio: 70000,
+        fotos: [
+          "modular_living/JPEG/1.jpg",
+          "modular_living/JPEG/2.jpg",
+          "modular_living/JPEG/3.jpg",
+          "modular_living/JPEG/4.jpg",
+          "modular_living/JPEG/5.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Alacena 1",
+        especificaciones: ["Medidas: 60cm alto x 79,5 ancho"],
+        precio: 25000,
+        fotos: [
+          "alacenas/alacena_1/JPEG/1.jpg",
+          "alacenas/alacena_1/JPEG/2.jpg",
+          "alacenas/alacena_1/JPEG/3.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Alacena 2",
+        especificaciones: [
+          "Medidas: 100 cm ancho x 60 cm alto x 33 cm profundidad",
+          "                (ancho: 77 cm placard + 23 cm estante)",
+        ],
+        precio: 25000,
+        fotos: [
+          "alacenas/alacena_2/JPEG/1.jpg",
+          "alacenas/alacena_2/JPEG/2.jpg",
+          "alacenas/alacena_2/JPEG/3.jpg",
+          "alacenas/alacena_2/JPEG/4.jpg",
+        ],
+        estado: "Vendido",
+      },
+      {
+        descripcion: "Alacena 3",
+        especificaciones: ["Medidas: "],
+        precio: 25000,
+        fotos: [
+          "alacenas/alacena_3/JPEG/1.jpg",
+          "alacenas/alacena_3/JPEG/2.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Freezer Vertical Whirlpool",
+        especificaciones: [
+          "Marca: Whirlpool",
+          "Incluye 4 estantes",
+          "Medidas: 86 cm de alto x 52 de largo x 49 de ancho",
+        ],
+        precio: 95000,
+        fotos: [
+          "freezer_vertical/JPEG/1.jpg",
+          "freezer_vertical/JPEG/2.jpg",
+          "freezer_vertical/JPEG/3.jpg",
+          "freezer_vertical/JPEG/4.jpg",
+          "freezer_vertical/JPEG/5.jpg",
+          "freezer_vertical/JPEG/6.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Heladera con Freezer General Electric",
+        especificaciones: [
+          "Heladera con Freezer No Frost Plateada",
+          "Incluye dispenser de agua y luz digital",
+          "Marca: General Electric",
+          "Medida: 1,90 m de alto x 68 cm x 80 cm de profundidad",
+        ],
+        precio: 0,
+        fotos: [
+          "heladera/JPEG/1.jpg",
+          "heladera/JPEG/2.jpg",
+          "heladera/JPEG/3.jpg",
+          "heladera/JPEG/4.jpg",
+          "heladera/JPEG/5.jpg",
+        ],
+        estado: "Reservado",
+      },
+      {
+        descripcion: "Microondas Frigidaire",
+        especificaciones: ["Marca: Frigidaire"],
+        precio: 19900,
+        fotos: [
+          "microondas/JPEG/1.jpg",
+          "microondas/JPEG/2.jpg",
+          "microondas/JPEG/3.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Horno Eléctrico",
+        especificaciones: [
+          "Horno Eléctrico con estante",
+          "Incluye bandeja de regalo",
+          "Marca: ATM",
+        ],
+        precio: 0,
+        fotos: [
+          "horno_electrico/JPEG/1.jpg",
+          "horno_electrico/JPEG/2.jpg",
+          "horno_electrico/JPEG/3.jpg",
+          "horno_electrico/JPEG/4.jpg",
+          "horno_electrico/JPEG/5.jpg",
+        ],
+        estado: "Reservado",
+      },
+      {
+        descripcion: "Alacena vertical de pie",
+        especificaciones: [
+          "Material: Madera laqueada blanca",
+          "Medida: 1,20 m de alto x 32 de ancho x 30 de profundidad",
+        ],
+        precio: 7000,
+        fotos: [
+          "alacena_de_pie/JPEG/1.jpg",
+          "alacena_de_pie/JPEG/2.jpg",
+          "alacena_de_pie/JPEG/3.jpg",
+        ],
+        estado: "Reservado",
+      },
+      {
+        descripcion: "Despensero/alacena de pie",
+        especificaciones: [
+          "Despensero/alacena con doble puerta y estantes",
+          "Material: Madera laqueada blanca",
+          "Medidas: 1,50 m alto x 60 cm largo x 32 cm de ancho",
+        ],
+        precio: 8000,
+        fotos: [
+          "despensero/JPEG/1.jpg",
+          "despensero/JPEG/2.jpg",
+          "despensero/JPEG/3.jpg",
+          "despensero/JPEG/4.jpg",
+          "despensero/JPEG/5.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Mesa rebatible de pared",
+        especificaciones: [
+          "Medidas:Mesa 75 cm ancho x 47 cm profundidad x 2 cm de alto",
+          "Estante 75 cm ancho x 10 cm profundidad x 2 cm de alto",
+        ],
+        precio: 8000,
+        fotos: [
+          "mesa_rebatible/JPEG/1.jpg",
+          "mesa_rebatible/JPEG/2.jpg",
+          "mesa_rebatible/JPEG/3.jpg",
+          "mesa_rebatible/JPEG/4.jpg",
+          "mesa_rebatible/JPEG/5.jpg",
+          "mesa_rebatible/JPEG/6.jpg",
+          "mesa_rebatible/JPEG/7.jpg",
+        ],
+        estado: "Vendido",
+      },
+      {
+        descripcion: "Sillas de hierro con cuero ecológico",
+        especificaciones: [
+          "Juego de Sillas",
+          "Material: Hierro con cuero ecológico",
+          "3 unidades",
+        ],
+        precio: 12000,
+        fotos: [
+          "sillas/JPEG/1.jpg",
+          "sillas/JPEG/2.jpg",
+          "sillas/JPEG/3.jpg",
+          "sillas/JPEG/4.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Colchón + Sommier 2 plazas con resortes",
+        especificaciones: [
+          "Marca: Sucam",
+          "Tipo de colchon: Resortes",
+          "Medidas: 1,40 m de ancho x 1,90 m de largo",
+        ],
+        precio: 0,
+        fotos: [
+          "cama_dos_plazas/JPEG/1.jpg",
+          "cama_dos_plazas/JPEG/2.jpg",
+          "cama_dos_plazas/JPEG/3.jpg",
+          "cama_dos_plazas/JPEG/4.jpg",
+        ],
+        estado: "Reservado",
+      },
+      {
+        descripcion: "Respaldo de cama",
+        especificaciones: [
+          "Respaldo de 2 Plazas",
+          "Material: madera Laqueada Blanca y Capitone de Cuero Ecológico",
+          "Color Crema",
+          "Medidas: 40 cm de alto x 60 cm de largo x 45 cm de ancho",
+        ],
+        precio: 0,
+        fotos: ["cama_dos_plazas/JPEG/3.jpg", "cama_dos_plazas/JPEG/4.jpg"],
+        estado: "Reservado",
+      },
+      {
+        descripcion: "Mesa de luz",
+        especificaciones: [
+          "Mesas de Luz",
+          "Dos unidades",
+          "Material:Madera laqueada blanca con dos cajones y desayunador",
+          "Medidas: 65 cm de alto x 40 cm de ancho x 45 de largo",
+        ],
+        precio: 0,
+        fotos: [
+          "mesa_de luz/JPEG/1.jpg",
+          "mesa_de luz/JPEG/2.jpg",
+          "mesa_de luz/JPEG/3.jpg",
+          "mesa_de luz/JPEG/4.jpg",
+        ],
+        estado: "Reservado",
+      },
+      {
+        descripcion: "Cómoda",
+        especificaciones: [
+          "Cómoda de madera laqueada blanca con cajoneras",
+          "Medidas: 80 cm de alto x 1,20 m de largo x 45 cm de ancho",
+        ],
+        precio: 0,
+        fotos: [
+          "comoda/JPEG/1.jpg",
+          "comoda/JPEG/2.jpg",
+          "comoda/JPEG/3.jpg",
+        ],
+        estado: "Reservado",
+      },
+      {
+        descripcion: "Zapatillero",
+        especificaciones: [
+          "Mueble de madera con estantes y cajonera para apoyar zapatillas",
+          "Medidas: 1,42 m alto x 55 cm ancho x 35 cm profundidad",
+        ],
+        precio: 9000,
+        fotos: ["zapatillero/JPEG/1.jpg", "zapatillero/JPEG/2.jpg"],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Rack para TV 2",
+        especificaciones: [
+          "Rack para TV con placard",
+          "Incluye hueco para deco/consolas con agujero al fondo para cables",
+          "Material: Madera laqueada blanca",
+          "Medidas: 80 cm de alto x 45 cm de ancho x 60 cm de largo",
+        ],
+        precio: 18000,
+        fotos: [
+          "rack_tv_2/JPEG/4.jpg",
+          "rack_tv_2/JPEG/3.jpg",
+          "rack_tv_2/JPEG/2.jpg",
+          "rack_tv_2/JPEG/1.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Armario",
+        especificaciones: [
+          "Armario/Ropero de madera con cajonera, espacios para ropa y zapatillas",
+          "Material: madera laqueada",
+          "Medidas: 2,20 m de alto x 90 cm de ancho x 60 cm de largo",
+        ],
+        precio: 40000,
+        fotos: [
+          "armario/JPEG/1.jpg",
+          "armario/JPEG/2.jpg",
+          "armario/JPEG/3.jpg",
+          "armario/JPEG/4.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Cama 1 plaza",
+        especificaciones: [
+          "Incluye:",
+          "- 3 cajones amplios",
+          "- Hueco para guardar un segundo colchón",
+          "Material: Madera laqueada",
+          "Medidas: 85 cm de alto x 97 cm de ancho x 1,97 m de largo",
+        ],
+        precio: 35000,
+        fotos: [
+          "cama_una_plaza/JPEG/1.jpg",
+          "cama_una_plaza/JPEG/2.jpg",
+          "cama_una_plaza/JPEG/3.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Colchón 1 plaza espuma alta densidad",
+        especificaciones: ["Medidas: 90 cm x 1.90 m"],
+        precio: 12000,
+        fotos: ["cama_una_plaza/JPEG/1.jpg"],
+        estado: "Vendido",
+      },
+      {
+        descripcion: "Colchón 1 plaza",
+        especificaciones: ["Medidas: 80 cm x 1,90 m"],
+        precio: 8000,
+        fotos: [
+          "colchon/JPEG/1.jpg",
+          "colchon/JPEG/2.jpg",
+          "colchon/JPEG/3.jpg",
+        ],
+        estado: "Vendido",
+      },
+      {
+        descripcion: "Escritorio Esquinero con Cajonera",
+        especificaciones: [
+          "Material: Madera laqueada blanca",
+          "Medidas: 1,25 m x 1,60 m",
+          "Incluye:",
+          "- Base para pantalla",
+          "- Base para pc de escritorio con rueditas",
+        ],
+        precio: 40000,
+        fotos: [
+          "escritorio/JPEG/1.jpg",
+          "escritorio/JPEG/2.jpg",
+          "escritorio/JPEG/3.jpg",
+          "escritorio/JPEG/4.jpg",
+          "escritorio/JPEG/5.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Biblioteca con armario",
+        especificaciones: [
+          "Material: Madera laqueada blanca",
+          "Medidas: 1,40 m de largo x 70 cm de alto x 30 cm de ancho",
+        ],
+        precio: 22000,
+        fotos: [
+          "biblioteca/JPEG/1.jpg",
+          "biblioteca/JPEG/2.jpg",
+          "biblioteca/JPEG/3.jpg",
+          "biblioteca/JPEG/4.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Dormitorio juvenil",
+        especificaciones: [
+          "Arriba: Cama marinera con colchón",
+          "Abajo: Escritorio con escalera, estantes, cajonera y doble armario",
+          "Material: Madera laqueada blanca",
+          "Medidas: 1,70 m de alto x 2 m de largo x 95 cm de ancho",
+        ],
+        precio: 85000,
+        fotos: [
+          "dormitorio_juvenil/JPEG/1.jpg",
+          "dormitorio_juvenil/JPEG/2.jpg",
+          "dormitorio_juvenil/JPEG/3.jpg",
+          "dormitorio_juvenil/JPEG/4.jpg",
+          "dormitorio_juvenil/JPEG/5.jpg",
+          "dormitorio_juvenil/JPEG/6.jpg",
+          "dormitorio_juvenil/JPEG/7.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Estufa Orbis 416",
+        especificaciones: [
+          "Marca: Orbis",
+          "Modelo: 416",
+          "Tipo: A gas - Tiro balanceado",
+          "Medidas: 70 cm de ancho x 60 cm de alto x 15 cm de profundidad",
+          "Potencia: 5,8 Kw",
+          "Potencia Máxima: 5000 kcal/h",
+        ],
+        precio: 25400,
+        fotos: [
+          "estufa/JPEG/1.jpg",
+          "estufa/JPEG/2.jpg",
+          "estufa/JPEG/3.jpg",
+          "estufa/JPEG/4.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Calefactor Kacemaster",
+        especificaciones: [
+          "Calefactor de aceite eléctrico",
+          "Portable con ruedas",
+          "Marca: Kacemaster",
+        ],
+        precio: 19000,
+        fotos: [
+          "calefactor/JPEG/1.jpg",
+          "calefactor/JPEG/2.jpg",
+          "calefactor/JPEG/3.jpg",
+          "calefactor/JPEG/4.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Combo PC para oficina",
+        especificaciones: [
+          "Incluye:",
+          " - PC de escritorio (CPU: AMD Athlon 5150 APU with Radeon R3 1.60 GHz, Disco: SSD 240 GB, Memoria: 4 GB)",
+          " - Monitor Samsung SyncMaster 732N 17\"",
+          " - Impresora HP Deskjet F4180 (con cartuchos y hojas de regalo)",
+          " - Teclado, mouse, parlantes USB",
+          " - Todos los cables y enchufes necesarios",
+          " - Windows 10, paquete Office, antivirus",
+          "La comprás, te la llevás, la echufás y ya la podés usar",
+        ],
+        precio: 60000,
+        fotos: ["pc_de_escritorio/JPEG/1.jpg", "pc_de_escritorio/JPEG/2.jpg", "impresora/JPEG/3.jpg",
+          "impresora/JPEG/2.jpg",
+          "impresora/JPEG/1.jpg", "monitor/1.jpg",
+          "monitor/2.jpg",],
+        estado: "En venta",
+      },
+      {
+        descripcion: "PC de escritorio",
+        especificaciones: [
+          "AMD Athlon 5150 APU with Radeon R3 1.60 GHz",
+          "Disco SSD 240 GB",
+          "4 GB RAM",
+          "Incluye:",
+          "Programas: Windows 10, paquete Office, antivirus",
+          "Dispositivos: Teclado, mouse, parlantes USB y cable power",
+        ],
+        precio: 35000,
+        fotos: ["pc_de_escritorio/JPEG/1.jpg", "pc_de_escritorio/JPEG/2.jpg"],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Impresora HP Deskjet F4180",
+        especificaciones: [
+          "Modelo: HP Deskjet F4180",
+          "Multifunción impresora - escáner",
+          "Inyección de tinta",
+          "Incluye cartuchos con poco uso",
+        ],
+        precio: 15000,
+        fotos: [
+          "impresora/JPEG/3.jpg",
+          "impresora/JPEG/2.jpg",
+          "impresora/JPEG/1.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Monitor Samsung SyncMaster 732N 17\"",
+        especificaciones: [
+          "Marca: Samsung",
+          "Modelo: 732NPlus",
+          "17 pulgadas"
+        ],
+        precio: 20000,
+        fotos: [
+          "monitor/1.jpg",
+          "monitor/2.jpg",
+        ],
+        estado: "En venta",
+      },
+      {
+        descripcion: "Guitarra",
+        especificaciones: ["Medio Concierto", "Casa Nuñez"],
+        precio: 7000,
+        fotos: [
+          "guitarra/JPEG/1.jpg",
+          "guitarra/JPEG/2.jpg",
+          "guitarra/JPEG/3.jpg",
+          "guitarra/JPEG/4.jpg",
+        ],
+        estado: "Vendido",
+      },
+      {
+        descripcion: "Lector de cintas",
+        especificaciones: [],
+        precio: 0,
+        fotos: ["lector_de_cintas/JPEG/1.jpg", "lector_de_cintas/JPEG/2.jpg"],
+        estado: "En venta",
+      },
+    ];
+
+    productos
+      .sort((a, b) =>
+        a.estado == "En venta"
+          ? b.estado != "En venta"
+            ? 1
+            : 0
+          : b.estado == "En venta"
             ? -1
             : 0
-        )
-        .forEach((producto) => {
-          const cards = document.getElementsByClassName("cards")[0];
-          const div = document.createElement("div");
-          div.className = "card";
-          div.innerHTML =
-            '<div class="splide">' +
-            ' <div class="splide__track">' +
-            '   <ul class="splide__list">' +
-            producto.fotos
-              .map(
-                (foto) =>
-                  '     <li class="splide__slide card-img-top" data-src="img/' +
-                  foto +
-                  '">' +
-                  '       <img src="img/' +
-                  foto +
-                  '" alt="" /></li>'
-              )
-              .join("") +
-            "   </ul>" +
-            " </div>" +
-            "</div>" +
-            '<div class="card-body">' +
-            '<h5 class="card-title">' +
-            producto.descripcion +
-            "</h5>" +
-            '<p class="card-text">' +
-            producto.especificaciones
-              .map((especificaciones) => especificaciones + "<br />")
-              .join("") +
-            "</p>" +
-            '<div class="btn ' +
-            (producto.estado == "En venta"
-              ? "btn-primary"
-              : producto.estado == "Reservado"
+      )
+      .forEach((producto) => {
+        const cards = document.getElementsByClassName("cards")[0];
+        const div = document.createElement("div");
+        div.className = "card";
+        div.innerHTML =
+          '<div class="splide">' +
+          ' <div class="splide__track">' +
+          '   <ul class="splide__list">' +
+          producto.fotos
+            .map(
+              (foto) =>
+                '     <li class="splide__slide card-img-top" data-src="img/' +
+                foto +
+                '">' +
+                '       <img src="img/' +
+                foto +
+                '" alt="" /></li>'
+            )
+            .join("") +
+          "   </ul>" +
+          " </div>" +
+          "</div>" +
+          '<div class="card-body">' +
+          '<h5 class="card-title">' +
+          producto.descripcion +
+          "</h5>" +
+          '<p class="card-text">' +
+          producto.especificaciones
+            .map((especificaciones) => especificaciones + "<br />")
+            .join("") +
+          "</p>" +
+          '<div class="btn ' +
+          (producto.estado == "En venta"
+            ? "btn-primary"
+            : producto.estado == "Reservado"
               ? "btn-success"
               : "btn-danger") +
-            '">' +
-            (producto.estado == "En venta"
-              ? "$ " + producto.precio.toLocaleString("es-AR")
-              : producto.estado) +
-            "  </div>" +
-            "</div>";
-          cards.appendChild(div);
-        });
+          '">' +
+          (producto.estado == "En venta"
+            ? "$ " + producto.precio.toLocaleString("es-AR")
+            : producto.estado) +
+          "  </div>" +
+          "</div>";
+        cards.appendChild(div);
+      });
 
-      document
-        .querySelectorAll(".splide")
-        .forEach((carousel) => new Splide(carousel).mount());
+    document
+      .querySelectorAll(".splide")
+      .forEach((carousel) => new Splide(carousel).mount());
 
-      document.querySelectorAll(".splide__list").forEach((slide) =>
-        lightGallery(slide, {
-          thumbnail: true,
-        })
-      );
-    </script>
-  </body>
+    document.querySelectorAll(".splide__list").forEach((slide) =>
+      lightGallery(slide, {
+        thumbnail: true,
+      })
+    );
+  </script>
+</body>
+
 </html>
